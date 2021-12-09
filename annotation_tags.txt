@@ -1,0 +1,411 @@
+<View>
+  <Text name="text" value="$Text"/>
+  <View style="box-shadow: 2px 2px 5px #999; padding: 20px; margin-top: 2em; border-radius: 5px;">
+    <Header value="First Party Collection/Use"/>
+    <Header size="6" value="Privacy practice describing data collection or data use by the company/organization owning the website or mobile app."/>
+    <Header size="8" value="Does/Does Not: Use this optional attribute to denote if the policy explicitly states that something is NOT done. Defaults to Does."/>
+    <Choices name="firstparty1" toName="text" choice="single-radio" showInLine="true">
+      <Choice value="Does"/>
+      <Choice value="Does Not"/>
+    </Choices>
+    <Header size="8" value="Collection Mode: Use this optional attribute to denote if the data collection performed by the first party is implicit (e.g., company collects information without user's explicit awareness) or explicit (e.g., user provides information). Defaults to “not selected.”"/>
+    <Choices name="firstparty2" toName="text" choice="single-radio" showInLine="true">
+      <Choice value="Explicity"/>
+      <Choice value="Implicity"/>
+      <Choice value="Unespecified"/>
+    </Choices>
+    <Header size="8" value="Action First-Party: How does the first party collect, track, or obtain user information?"/>
+    <Choices name="firstparty3" toName="text" choice="multiple" showInLine="true">
+      <Choice value="Collect on website"/>
+      <Choice value="Collect in mobile app"/>
+      <Choice value="Collect on mobile website"/>
+      <Choice value="Track user on other websites"/>
+      <Choice value="Collect from user on other websites"/>
+      <Choice value="Receive from other parts of company/affiliates"/>
+      <Choice value="Receive from other service/third-party (unnamed)"/>
+      <Choice value="Receive from other service/third-party (named)"/>
+      <Choice value="Other"/>
+      <Choice value="Unespecified"/>
+    </Choices>
+    <Header size="8" value="Identifiability: Use this optional attribute if it is explicitly stated whether the information or data practice is linked to the user's identity or if it is anonymous. Defaults to “not selected“."/>
+    <Choices name="firstparty4" toName="text" choice="single-radio" showInLine="true">
+      <Choice value="Aggregated or anonymized"/>
+      <Choice value="Other"/>
+      <Choice value="Unespecified"/>
+    </Choices>
+    <Header size="8" value="Personal Information Type: What category of information is collected or tracked by the company/organization?"/>
+    <Choices name="firstparty5" toName="text" choice="multiple" showInLine="true">
+      <Choice value="Financial"/>
+      <Choice value="Health"/>
+      <Choice value="Contact"/>
+      <Choice value="Location"/>
+      <Choice value="Demographic"/>
+      <Choice value="Personal identifier"/>
+      <Choice value="User online activities"/>
+      <Choice value="User profile"/>
+      <Choice value="Social media data"/>
+      <Choice value="IP address and device IDs"/>
+      <Choice value="Cookies and tracking elements"/>
+      <Choice value="Computer information"/>
+      <Choice value="Survey data"/>
+      <Choice value="Generic personal information"/>
+      <Choice value="Other"/>
+      <Choice value="Unespecified"/>
+    </Choices>
+    <Header size="8" value="Purpose: What is the purpose of collecting or using user information?"/>
+    <Choices name="firstparty6" toName="text" choice="multiple" showInLine="true">
+      <Choice value="Basic service/feature"/>
+      <Choice value="Additional service/feature"/>
+      <Choice value="Advertising"/>
+      <Choice value="Marketing"/>
+      <Choice value="Analytics/Research"/>
+      <Choice value="Personalization/Customization"/>
+      <Choice value="Service Operation and Security"/>
+      <Choice value="Legal requirement"/>
+      <Choice value="Merger/Acquisition"/>
+      <Choice value="Other"/>
+      <Choice value="Unespecified"/>
+    </Choices>
+    <Header size="8" value="User Type: Use this optional attribute if this practice applies specifically to users with an account or users without an account."/>
+    <Choices name="firstparty7" toName="text" choice="single-radio" showInLine="true">
+      <Choice value="User without account"/>
+      <Choice value="User with account"/>
+      <Choice value="Other"/>
+      <Choice value="Unespecified"/>
+    </Choices>
+    <Header size="8" value="Choice Type: Use this optional attribute if user choices are explicitly offered for this practice. Defaults to “not selected.”"/>
+    <Choices name="firstparty8" toName="text" choice="multiple" showInLine="true">
+      <Choice value="Dont use service/feature"/>
+      <Choice value="Opt-in"/>
+      <Choice value="Opt-out link"/>
+      <Choice value="Opt-out via contacting company"/>
+      <Choice value="First-party privacy controls"/>
+      <Choice value="Third-party privacy controls"/>
+      <Choice value="Browser/device privacy controls"/>
+      <Choice value="Other"/>
+      <Choice value="Unespecified"/>
+    </Choices>
+    <Header size="8" value="Choice Scope: Use this optional attribute to indicate the scope of user choices. In some cases, even if user choices are not clear or specific, this attribute can be selected. Defaults to “not selected.”"/>
+    <Choices name="firstparty9" toName="text" choice="single-radio" showInLine="true">
+      <Choice value="Collection"/>
+      <Choice value="Use"/>
+      <Choice value="Both"/>
+      <Choice value="Unespecified"/>
+    </Choices>
+  </View>
+  <View style="box-shadow: 2px 2px 5px #999; padding: 20px; margin-top: 2em; border-radius: 5px;">
+    <Header value="Third Party Sharing/Collection"/>
+    <Header size="6" value="Privacy practice describing data sharing with third parties or data collection by third parties. A third party is a company/organization other than the first party company/organization that owns the website or mobile app."/>
+    <Header size="8" value="Third Party Entity: The third-party involved in the data practice."/>
+    <Choices name="thirdparty1" toName="text" choice="multiple" showInLine="true">
+      <Choice value="Unnamed third party"/>
+      <Choice value="Named third party"/>
+      <Choice value="Other part of company/affiliate"/>
+      <Choice value="Other users"/>
+      <Choice value="Public"/>
+      <Choice value="Other"/>
+      <Choice value="Unspecified"/>
+    </Choices>
+    <Header size="8" value="Does/Does Not: Use this optional attribute to denote if the policy explicitly states that something is NOT done. Defaults to Does."/>
+    <Choices name="thirdparty2" toName="text" choice="single-radio" showInLine="true">
+      <Choice value="Does"/>
+      <Choice value="Does Not"/>
+    </Choices>
+    <Header size="8" value="Action Third Party: How does the third-party receive, collect, track, or see user information."/>
+    <Choices name="thirdparty3" toName="text" choice="multiple" showInLine="true">
+      <Choice value="Receive/Shared with"/>
+      <Choice value="Collect on first party website/app"/>
+      <Choice value="Track on first party website/app"/>
+      <Choice value="See"/>
+      <Choice value="Other"/>
+      <Choice value="Unspecified"/>
+    </Choices>
+    <Header size="8" value="Identifiability: Use this optional attribute if if it is explicitly stated whether the information or data practice is linked to the user's identity or if it is anonymous. Defaults to “not selected“."/>
+    <Choices name="thirdparty4" toName="text" choice="single-radio" showInLine="true">
+      <Choice value="Identifiable"/>
+      <Choice value="Aggregated or anonymized"/>
+      <Choice value="Other"/>
+      <Choice value="Unspecified"/>
+    </Choices>
+    <Header size="8" value="Personal Information Type: What category of information is shared with, collected by or otherwise obtained by the third-party."/>
+    <Choices name="thirdparty5" toName="text" choice="multiple" showInLine="true">
+      <Choice value="Financial"/>
+      <Choice value="Health"/>
+      <Choice value="Contact"/>
+      <Choice value="Location"/>
+      <Choice value="Demographic"/>
+      <Choice value="Personal identifier"/>
+      <Choice value="User online activities"/>
+      <Choice value="User Profile"/>
+      <Choice value="IP address and device IDs"/>
+      <Choice value="Cookies and tracking elements"/>
+      <Choice value="Computer information"/>
+      <Choice value="Survey data"/>
+      <Choice value="Generic personal information"/>
+      <Choice value="Other"/>
+      <Choice value="Unspecified"/>
+    </Choices>
+    <Header size="8" value="Purpose: What is the purpose of a third party receiving or collecting user information?"/>
+    <Choices name="thirdparty6" toName="text" choice="multiple" showInLine="true">
+      <Choice value="Basic service/feature"/>
+      <Choice value="Additional service/feature"/>
+      <Choice value="Advertising"/>
+      <Choice value="Marketing"/>
+      <Choice value="Analytics/Research"/>
+      <Choice value="Personalization/Customization"/>
+      <Choice value="Service operation and security"/>
+      <Choice value="Legal requirement"/>
+      <Choice value="Merger/Acquisition"/>
+      <Choice value="Other"/>
+      <Choice value="Unspecified"/>
+    </Choices>
+    <Header size="8" value="User Type: Use this optional attribute if this practice applies specifically to users with an account or users without an account."/>
+    <Choices name="thirdparty7" toName="text" choice="single-radio" showInLine="true">
+      <Choice value="User without account"/>
+      <Choice value="User with account"/>
+      <Choice value="Other"/>
+      <Choice value="Unspecified"/>
+    </Choices>
+    <Header size="8" value="Choice Type: Use this optional attribute if user choices are explicitly offered for this practice. Defaults to “not selected.” "/>
+    <Choices name="thirdparty8" toName="text" choice="multiple" showInLine="true">
+      <Choice value="Dont use service/feature"/>
+      <Choice value="Opt-in"/>
+      <Choice value="Opt-out link"/>
+      <Choice value="Opt-out via contacting company"/>
+      <Choice value="First-party privacy controls"/>
+      <Choice value="Third-party privacy controls"/>
+      <Choice value="Browser/device privacy controls"/>
+      <Choice value="Other"/>
+      <Choice value="Unspecified"/>
+    </Choices>
+    <Header size="8" value="Choice Scope: Use this optional attribute to indicate the scope of user choices. In some cases, even if user choices are not clear or specific, this attribute can be selected. Defaults to “not selected.”"/>
+    <Choices name="thirdparty9" toName="text" choice="single-radio" showInLine="true">
+      <Choice value="Collection"/>
+      <Choice value="Use"/>
+      <Choice value="Both"/>
+      <Choice value="Unspecified"/>
+    </Choices>
+  </View>
+  <View style="box-shadow: 2px 2px 5px #999; padding: 20px; margin-top: 2em; border-radius: 5px;">
+    <Header value="User Choice/Control"/>
+    <Header size="6" value="Practice that describes general choices and control options available to users."/>
+    <Header size="8" value="Choice Type: The type of user choice or privacy control options available to users."/>
+    <Choices name="userchoice" toName="text" choice="multiple" showInLine="true">
+      <Choice value="Dont use service/feature"/>
+      <Choice value="Opt-in"/>
+      <Choice value="Opt-out link"/>
+      <Choice value="Opt-out via contacting company"/>
+      <Choice value="First-party privacy controls"/>
+      <Choice value="Third-party privacy controls"/>
+      <Choice value="Browser/device privacy controls"/>
+      <Choice value="Other"/>
+      <Choice value="Unspecified"/>
+    </Choices>
+    <Header size="8" value="Choice Scope: What scope does the user choice or control apply to, i.e., first party collection/use or third party collection/use. Note that sometimes use of information can be limited, but the information is still collected from users."/>
+    <Choices name="userchoice2" toName="text" choice="multiple" showInLine="true">
+      <Choice value="First party collection"/>
+      <Choice value="First party use"/>
+      <Choice value="Third party sharing/collection"/>
+      <Choice value="Third party use"/>
+      <Choice value="Unspecified"/>
+    </Choices>
+    <Header size="8" value="Personal Information Type: What category of information does the user choice apply to?"/>
+    <Choices name="userchoice3" toName="text" choice="multiple" showInLine="true">
+      <Choice value="Financial"/>
+      <Choice value="Health"/>
+      <Choice value="Contact"/>
+      <Choice value="Location"/>
+      <Choice value="Demographic"/>
+      <Choice value="Personal identifier"/>
+      <Choice value="User online activities"/>
+      <Choice value="User profile"/>
+      <Choice value="Social media data"/>
+      <Choice value="IP address and device IDs"/>
+      <Choice value="Cookies and tracking elements"/>
+      <Choice value="Computer information"/>
+      <Choice value="Survey data"/>
+      <Choice value="Generic personal information"/>
+      <Choice value="Other"/>
+      <Choice value="Unspecified"/>
+    </Choices>
+    <Header size="8" value="Purpose: What purpose/use of information does the user choice apply to?"/>
+    <Choices name="userchoice4" toName="text" choice="multiple" showInLine="true">
+      <Choice value="Basic service/feature"/>
+      <Choice value="Additional service/feature"/>
+      <Choice value="Advertising"/>
+      <Choice value="Marketing"/>
+      <Choice value="Analytics/Research"/>
+      <Choice value="Personalization/Customization"/>
+      <Choice value="Service Operation and Security"/>
+      <Choice value="Legal requirement"/>
+      <Choice value="Merger/Acquisition"/>
+      <Choice value="Other"/>
+      <Choice value="Unespecified"/>
+    </Choices>
+    <Header size="8" value="User Type: Use this optional attribute if this practice applies specifically to users with an account or users without an account."/>
+    <Choices name="userchoice5" toName="text" choice="single-radio" showInLine="true">
+      <Choice value="User without account"/>
+      <Choice value="User with account"/>
+      <Choice value="Other"/>
+      <Choice value="Unespecified"/>
+    </Choices>
+  </View>
+  <View style="box-shadow: 2px 2px 5px #999; padding: 20px; margin-top: 2em; border-radius: 5px;">
+    <Header value="User Access, Edit and Deletion"/>
+    <Header size="6" value="Privacy practice that allows users to access, edit or delete the data that the company/organization has about them."/>
+    <Header size="8" value="Access Type: Options offered for users to access, edit, delete information that the company/organization has about them."/>
+    <Choices name="useraccess1" toName="text" choice="multiple" showInLine="true">
+      <Choice value="None"/>
+      <Choice value="View"/>
+      <Choice value="Export"/>
+      <Choice value="Edit information"/>
+      <Choice value="Deactivate account"/>
+      <Choice value="Delete account (partial)"/>
+      <Choice value="Delete account (full)"/>
+      <Choice value="Other"/>
+      <Choice value="Unspecified"/>
+    </Choices>
+    <Header size="8" value="Access Scope: If access is offered, what data does it apply to."/>
+    <Choices name="useraccess2" toName="text" choice="multiple" showInLine="true">
+      <Choice value="User account data"/>
+      <Choice value="Transactional data"/>
+      <Choice value="Profile data"/>
+      <Choice value="Other data about user"/>
+      <Choice value="Other"/>
+      <Choice value="Unspecified"/>
+    </Choices>
+    <Header size="8" value="User Type: Use this optional attribute if this practice applies specifically to users with an account or users without an account."/>
+    <Choices name="useraccess3" toName="text" choice="single-radio" showInLine="true">
+      <Choice value="User without account"/>
+      <Choice value="User with account"/>
+      <Choice value="Other"/>
+      <Choice value="Unespecified"/>
+    </Choices>
+  </View>
+  <View style="box-shadow: 2px 2px 5px #999; padding: 20px; margin-top: 2em; border-radius: 5px;">
+    <Header value="Data Retention"/>
+    <Header size="6" value="Privacy practice specifying the retention period for collected user information."/>
+    <Header size="8" value="Retention Period: Description of the retention period, i.e., how long data is stored."/>
+    <Choices name="dataretention1" toName="text" choice="single-radio" showInLine="true">
+      <Choice value="Indefinitely"/>
+      <Choice value="Limited"/>
+      <Choice value="Stated Period"/>
+      <Choice value="Other"/>
+      <Choice value="Unespecified"/>
+    </Choices>
+    <Header size="8" value="Retention Purpose: The purpose to which the retention practice applies (may be “unspecified”)."/>
+    <Choices name="dataretention2" toName="text" choice="multiple" showInLine="true">
+      <Choice value="Perform service"/>
+      <Choice value="Legal requirement"/>
+      <Choice value="Analytics/Research"/>
+      <Choice value="Service operation and security"/>
+      <Choice value="Advertising"/>
+      <Choice value="Marketing"/>
+      <Choice value="Other"/>
+      <Choice value="Unespecified"/>
+    </Choices>
+    <Header size="8" value="Personal Information Type: The information type for which the retention period is specified (may be “unspecified”)."/>
+    <Choices name="dataretention3" toName="text" choice="multiple" showInLine="true">
+      <Choice value="Financial"/>
+      <Choice value="Health"/>
+      <Choice value="Contact"/>
+      <Choice value="Location"/>
+      <Choice value="Demographic"/>
+      <Choice value="Personal identifier"/>
+      <Choice value="User online activities"/>
+      <Choice value="User profile"/>
+      <Choice value="Social media data"/>
+      <Choice value="IP address and device IDs"/>
+      <Choice value="Cookies and tracking elements"/>
+      <Choice value="Computer information"/>
+      <Choice value="Survey data"/>
+      <Choice value="Generic personal information"/>
+      <Choice value="Other"/>
+      <Choice value="Unespecified"/>
+    </Choices>
+  </View>
+  <View style="box-shadow: 2px 2px 5px #999; padding: 20px; margin-top: 2em; border-radius: 5px;">
+    <Header value="Data Security"/>
+    <Header size="6" value="Practice that describes how users’ information is secured and protected, e.g., from confidentiality, integrity, or availability breaches. Common practices include the encryption of stored data and online communications."/>
+    <Header size="8" value="Security Measure: Policy statements that describe the type of security that the website/app implements to protect users’ information."/>
+    <Choices name="datasecurity1" toName="text" choice="multiple" showInLine="true">
+      <Choice value="Secure data transfer"/>
+      <Choice value="Secure user authentication"/>
+      <Choice value="Secure data storage"/>
+      <Choice value="Data access limitation"/>
+      <Choice value="Privacy training"/>
+      <Choice value="Privacy review/audit"/>
+      <Choice value="Privacy/Security program"/>
+      <Choice value="Generic"/>
+      <Choice value="Other"/>
+      <Choice value="Unespecified"/>
+    </Choices>
+  </View>
+  <View style="box-shadow: 2px 2px 5px #999; padding: 20px; margin-top: 2em; border-radius: 5px;">
+    <Header value="Policy Change"/>
+    <Header size="6" value="The company/organization’s practices concerning if and how users will be informed of changes to its privacy policy, including any choices offered to users."/>
+    <Header size="8" value="Change Type: For what type of changes to the website/app’s policy are users notified."/>
+    <Choices name="policychange1" toName="text" choice="multiple" showInLine="true">
+      <Choice value="Non-privacy relevant change"/>
+      <Choice value="Privacy relevant change"/>
+      <Choice value="In case of merger or acquisition"/>
+      <Choice value="Other"/>
+      <Choice value="Unespecified"/>
+    </Choices>
+    <Header size="8" value="Notification Type: How is the user notified when the privacy policy changes."/>
+    <Choices name="policychange2" toName="text" choice="multiple" showInLine="true">
+      <Choice value="No notification"/>
+      <Choice value="General notice in privacy policy"/>
+      <Choice value="General notice on website"/>
+      <Choice value="Personal notice"/>
+      <Choice value="Other"/>
+      <Choice value="Unespecified"/>
+    </Choices>
+    <Header size="8" value="User Choice: What choices/options are offered to the user when the policy changes."/>
+    <Choices name="policychange3" toName="text" choice="multiple" showInLine="true">
+      <Choice value="None"/>
+      <Choice value="Opt-out"/>
+      <Choice value="Opt-in"/>
+      <Choice value="User participation"/>
+      <Choice value="Other"/>
+      <Choice value="Unespecified"/>
+    </Choices>
+  </View>
+  <View style="box-shadow: 2px 2px 5px #999; padding: 20px; margin-top: 2em; border-radius: 5px;">
+    <Header value="Do not Track "/>
+    <Header size="6" value="Practices that explain if and how Do Not Track signals (DNT) for online tracking and advertising are honored."/>
+    <Header size="8" value="Do Not Track policy: If and how Do-Not-Track signals (DNT) are honored."/>
+    <Choices name="donottrack1" toName="text" choice="single-radio" showInLine="true">
+      <Choice value="Not mentioned"/>
+      <Choice value="Honored"/>
+      <Choice value="Not honored"/>
+      <Choice value="Mentioned, but unclear if honored"/>
+      <Choice value="Other"/>
+    </Choices>
+  </View>
+  <View style="box-shadow: 2px 2px 5px #999; padding: 20px; margin-top: 2em; border-radius: 5px;">
+    <Header value="International and Specific Audiences"/>
+    <Header size="6" value="Specific audiences mentioned in the company/organization’s privacy policy, such as children or international users, for which the company/organization may provide special provisions."/>
+    <Header size="8" value="Audience Type: Select which audience the policy segment refers to."/>
+    <Choices name="international1" toName="text" choice="multiple" showInLine="true">
+      <Choice value="Californians"/>
+      <Choice value="Europeans"/>
+      <Choice value="Citizens from other countries"/>
+      <Choice value="Children"/>
+      <Choice value="Other"/>
+    </Choices>
+  </View>
+  <View style="box-shadow: 2px 2px 5px #999; padding: 20px; margin-top: 2em; border-radius: 5px;">
+    <Header value="Others"/>
+    <Header size="6" value="Another aspect not covered in the other categories is discussed in the text segment."/>
+    <Header size="8" value="Other Type: What other aspect not covered in the other categories is discussed in the text segment?"/>
+    <Choices name="others1" toName="text" choice="multiple" showInLine="true">
+      <Choice value="Introductory/Generic"/>
+      <Choice value="Practice not covered"/>
+      <Choice value="Privacy contact information"/>
+      <Choice value="Other"/>
+    </Choices>
+  </View>
+</View>
+<!-- { "data": {"text": "This is a tool for annotating privacy policies practices."}
+}-->
