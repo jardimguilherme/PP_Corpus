@@ -1,14 +1,14 @@
 <View>
-  <Text name="text" value="$Text"/>
+  <Text name="text" value="$Paragraph_Text"/>
   <View style="box-shadow: 2px 2px 5px #999; padding: 20px; margin-top: 2em; border-radius: 5px;">
     <Header value="First Party Collection/Use"/>
-    <Header size="6" value="Privacy practice describing data collection or data use by the company/organization owning the website or mobile app."/>
-    <Header size="8" value="Does/Does Not: Use this optional attribute to denote if the policy explicitly states that something is NOT done. Defaults to Does."/>
+    <Header style="font-weight: normal;" size="6" value="Privacy practice describing data collection or data use by the company/organization owning the website or mobile app."/>
+    <Header style="font-style: italic;" size="8" value="Does/Does Not: Use this optional attribute to denote if the policy explicitly states that something is NOT done. Defaults to Does."/>
     <Choices name="firstparty1" toName="text" choice="single-radio" showInLine="true">
       <Choice value="Does"/>
       <Choice value="Does Not"/>
     </Choices>
-    <Header size="8" value="Collection Mode: Use this optional attribute to denote if the data collection performed by the first party is implicit (e.g., company collects information without user's explicit awareness) or explicit (e.g., user provides information). Defaults to “not selected.”"/>
+    <Header style="font-style: italic;" size="8" value="Collection Mode: Use this optional attribute to denote if the data collection performed by the first party is implicit (e.g., company collects information without user's explicit awareness) or explicit (e.g., user provides information). Defaults to “not selected.”"/>
     <Choices name="firstparty2" toName="text" choice="single-radio" showInLine="true">
       <Choice value="Explicity"/>
       <Choice value="Implicity"/>
@@ -27,7 +27,7 @@
       <Choice value="Other"/>
       <Choice value="Unespecified"/>
     </Choices>
-    <Header size="8" value="Identifiability: Use this optional attribute if it is explicitly stated whether the information or data practice is linked to the user's identity or if it is anonymous. Defaults to “not selected“."/>
+    <Header style="font-style: italic;" size="8" value="Identifiability: Use this optional attribute if it is explicitly stated whether the information or data practice is linked to the user's identity or if it is anonymous. Defaults to “not selected“."/>
     <Choices name="firstparty4" toName="text" choice="single-radio" showInLine="true">
       <Choice value="Aggregated or anonymized"/>
       <Choice value="Other"/>
@@ -66,14 +66,14 @@
       <Choice value="Other"/>
       <Choice value="Unespecified"/>
     </Choices>
-    <Header size="8" value="User Type: Use this optional attribute if this practice applies specifically to users with an account or users without an account."/>
+    <Header style="font-style: italic;" size="8" value="User Type: Use this optional attribute if this practice applies specifically to users with an account or users without an account."/>
     <Choices name="firstparty7" toName="text" choice="single-radio" showInLine="true">
       <Choice value="User without account"/>
       <Choice value="User with account"/>
       <Choice value="Other"/>
       <Choice value="Unespecified"/>
     </Choices>
-    <Header size="8" value="Choice Type: Use this optional attribute if user choices are explicitly offered for this practice. Defaults to “not selected.”"/>
+    <Header style="font-style: italic;" size="8" value="Choice Type: Use this optional attribute if user choices are explicitly offered for this practice. Defaults to “not selected.”"/>
     <Choices name="firstparty8" toName="text" choice="multiple" showInLine="true">
       <Choice value="Dont use service/feature"/>
       <Choice value="Opt-in"/>
@@ -85,7 +85,7 @@
       <Choice value="Other"/>
       <Choice value="Unespecified"/>
     </Choices>
-    <Header size="8" value="Choice Scope: Use this optional attribute to indicate the scope of user choices. In some cases, even if user choices are not clear or specific, this attribute can be selected. Defaults to “not selected.”"/>
+    <Header style="font-style: italic;" size="8" value="Choice Scope: Use this optional attribute to indicate the scope of user choices. In some cases, even if user choices are not clear or specific, this attribute can be selected. Defaults to “not selected.”"/>
     <Choices name="firstparty9" toName="text" choice="single-radio" showInLine="true">
       <Choice value="Collection"/>
       <Choice value="Use"/>
@@ -95,7 +95,7 @@
   </View>
   <View style="box-shadow: 2px 2px 5px #999; padding: 20px; margin-top: 2em; border-radius: 5px;">
     <Header value="Third Party Sharing/Collection"/>
-    <Header size="6" value="Privacy practice describing data sharing with third parties or data collection by third parties. A third party is a company/organization other than the first party company/organization that owns the website or mobile app."/>
+    <Header style="font-weight: normal;" size="6" value="Privacy practice describing data sharing with third parties or data collection by third parties. A third party is a company/organization other than the first party company/organization that owns the website or mobile app."/>
     <Header size="8" value="Third Party Entity: The third-party involved in the data practice."/>
     <Choices name="thirdparty1" toName="text" choice="multiple" showInLine="true">
       <Choice value="Unnamed third party"/>
@@ -106,7 +106,7 @@
       <Choice value="Other"/>
       <Choice value="Unspecified"/>
     </Choices>
-    <Header size="8" value="Does/Does Not: Use this optional attribute to denote if the policy explicitly states that something is NOT done. Defaults to Does."/>
+    <Header style="font-style: italic;" size="8" value="Does/Does Not: Use this optional attribute to denote if the policy explicitly states that something is NOT done. Defaults to Does."/>
     <Choices name="thirdparty2" toName="text" choice="single-radio" showInLine="true">
       <Choice value="Does"/>
       <Choice value="Does Not"/>
@@ -120,7 +120,7 @@
       <Choice value="Other"/>
       <Choice value="Unspecified"/>
     </Choices>
-    <Header size="8" value="Identifiability: Use this optional attribute if if it is explicitly stated whether the information or data practice is linked to the user's identity or if it is anonymous. Defaults to “not selected“."/>
+    <Header style="font-style: italic;" size="8" value="Identifiability: Use this optional attribute if if it is explicitly stated whether the information or data practice is linked to the user's identity or if it is anonymous. Defaults to “not selected“."/>
     <Choices name="thirdparty4" toName="text" choice="single-radio" showInLine="true">
       <Choice value="Identifiable"/>
       <Choice value="Aggregated or anonymized"/>
@@ -159,14 +159,14 @@
       <Choice value="Other"/>
       <Choice value="Unspecified"/>
     </Choices>
-    <Header size="8" value="User Type: Use this optional attribute if this practice applies specifically to users with an account or users without an account."/>
+    <Header style="font-style: italic;" size="8" value="User Type: Use this optional attribute if this practice applies specifically to users with an account or users without an account."/>
     <Choices name="thirdparty7" toName="text" choice="single-radio" showInLine="true">
       <Choice value="User without account"/>
       <Choice value="User with account"/>
       <Choice value="Other"/>
       <Choice value="Unspecified"/>
     </Choices>
-    <Header size="8" value="Choice Type: Use this optional attribute if user choices are explicitly offered for this practice. Defaults to “not selected.” "/>
+    <Header style="font-style: italic;" size="8" value="Choice Type: Use this optional attribute if user choices are explicitly offered for this practice. Defaults to “not selected.” "/>
     <Choices name="thirdparty8" toName="text" choice="multiple" showInLine="true">
       <Choice value="Dont use service/feature"/>
       <Choice value="Opt-in"/>
@@ -178,7 +178,7 @@
       <Choice value="Other"/>
       <Choice value="Unspecified"/>
     </Choices>
-    <Header size="8" value="Choice Scope: Use this optional attribute to indicate the scope of user choices. In some cases, even if user choices are not clear or specific, this attribute can be selected. Defaults to “not selected.”"/>
+    <Header style="font-style: italic;" size="8" value="Choice Scope: Use this optional attribute to indicate the scope of user choices. In some cases, even if user choices are not clear or specific, this attribute can be selected. Defaults to “not selected.”"/>
     <Choices name="thirdparty9" toName="text" choice="single-radio" showInLine="true">
       <Choice value="Collection"/>
       <Choice value="Use"/>
@@ -188,7 +188,7 @@
   </View>
   <View style="box-shadow: 2px 2px 5px #999; padding: 20px; margin-top: 2em; border-radius: 5px;">
     <Header value="User Choice/Control"/>
-    <Header size="6" value="Practice that describes general choices and control options available to users."/>
+    <Header style="font-weight: normal;" size="6" value="Practice that describes general choices and control options available to users."/>
     <Header size="8" value="Choice Type: The type of user choice or privacy control options available to users."/>
     <Choices name="userchoice" toName="text" choice="multiple" showInLine="true">
       <Choice value="Dont use service/feature"/>
@@ -242,7 +242,7 @@
       <Choice value="Other"/>
       <Choice value="Unespecified"/>
     </Choices>
-    <Header size="8" value="User Type: Use this optional attribute if this practice applies specifically to users with an account or users without an account."/>
+    <Header style="font-style: italic;" size="8" value="User Type: Use this optional attribute if this practice applies specifically to users with an account or users without an account."/>
     <Choices name="userchoice5" toName="text" choice="single-radio" showInLine="true">
       <Choice value="User without account"/>
       <Choice value="User with account"/>
@@ -252,7 +252,7 @@
   </View>
   <View style="box-shadow: 2px 2px 5px #999; padding: 20px; margin-top: 2em; border-radius: 5px;">
     <Header value="User Access, Edit and Deletion"/>
-    <Header size="6" value="Privacy practice that allows users to access, edit or delete the data that the company/organization has about them."/>
+    <Header style="font-weight: normal;" size="6" value="Privacy practice that allows users to access, edit or delete the data that the company/organization has about them."/>
     <Header size="8" value="Access Type: Options offered for users to access, edit, delete information that the company/organization has about them."/>
     <Choices name="useraccess1" toName="text" choice="multiple" showInLine="true">
       <Choice value="None"/>
@@ -274,7 +274,7 @@
       <Choice value="Other"/>
       <Choice value="Unspecified"/>
     </Choices>
-    <Header size="8" value="User Type: Use this optional attribute if this practice applies specifically to users with an account or users without an account."/>
+    <Header style="font-style: italic;" size="8" value="User Type: Use this optional attribute if this practice applies specifically to users with an account or users without an account."/>
     <Choices name="useraccess3" toName="text" choice="single-radio" showInLine="true">
       <Choice value="User without account"/>
       <Choice value="User with account"/>
@@ -284,7 +284,7 @@
   </View>
   <View style="box-shadow: 2px 2px 5px #999; padding: 20px; margin-top: 2em; border-radius: 5px;">
     <Header value="Data Retention"/>
-    <Header size="6" value="Privacy practice specifying the retention period for collected user information."/>
+    <Header style="font-weight: normal;" size="6" value="Privacy practice specifying the retention period for collected user information."/>
     <Header size="8" value="Retention Period: Description of the retention period, i.e., how long data is stored."/>
     <Choices name="dataretention1" toName="text" choice="single-radio" showInLine="true">
       <Choice value="Indefinitely"/>
@@ -326,7 +326,7 @@
   </View>
   <View style="box-shadow: 2px 2px 5px #999; padding: 20px; margin-top: 2em; border-radius: 5px;">
     <Header value="Data Security"/>
-    <Header size="6" value="Practice that describes how users’ information is secured and protected, e.g., from confidentiality, integrity, or availability breaches. Common practices include the encryption of stored data and online communications."/>
+    <Header style="font-weight: normal;" size="6" value="Practice that describes how users’ information is secured and protected, e.g., from confidentiality, integrity, or availability breaches. Common practices include the encryption of stored data and online communications."/>
     <Header size="8" value="Security Measure: Policy statements that describe the type of security that the website/app implements to protect users’ information."/>
     <Choices name="datasecurity1" toName="text" choice="multiple" showInLine="true">
       <Choice value="Secure data transfer"/>
@@ -343,7 +343,7 @@
   </View>
   <View style="box-shadow: 2px 2px 5px #999; padding: 20px; margin-top: 2em; border-radius: 5px;">
     <Header value="Policy Change"/>
-    <Header size="6" value="The company/organization’s practices concerning if and how users will be informed of changes to its privacy policy, including any choices offered to users."/>
+    <Header style="font-weight: normal;" size="6" value="The company/organization’s practices concerning if and how users will be informed of changes to its privacy policy, including any choices offered to users."/>
     <Header size="8" value="Change Type: For what type of changes to the website/app’s policy are users notified."/>
     <Choices name="policychange1" toName="text" choice="multiple" showInLine="true">
       <Choice value="Non-privacy relevant change"/>
@@ -373,7 +373,7 @@
   </View>
   <View style="box-shadow: 2px 2px 5px #999; padding: 20px; margin-top: 2em; border-radius: 5px;">
     <Header value="Do not Track "/>
-    <Header size="6" value="Practices that explain if and how Do Not Track signals (DNT) for online tracking and advertising are honored."/>
+    <Header style="font-weight: normal;" size="6" value="Practices that explain if and how Do Not Track signals (DNT) for online tracking and advertising are honored."/>
     <Header size="8" value="Do Not Track policy: If and how Do-Not-Track signals (DNT) are honored."/>
     <Choices name="donottrack1" toName="text" choice="single-radio" showInLine="true">
       <Choice value="Not mentioned"/>
@@ -385,8 +385,8 @@
   </View>
   <View style="box-shadow: 2px 2px 5px #999; padding: 20px; margin-top: 2em; border-radius: 5px;">
     <Header value="International and Specific Audiences"/>
-    <Header size="6" value="Specific audiences mentioned in the company/organization’s privacy policy, such as children or international users, for which the company/organization may provide special provisions."/>
-    <Header size="8" value="Audience Type: Select which audience the policy segment refers to."/>
+    <Header style="font-weight: normal;" size="6" value="Specific audiences mentioned in the company/organization’s privacy policy, such as children or international users, for which the company/organization may provide special provisions."/>
+    <Header size="8" value="Audience Type: Select which audience the policy segment refers to"/>
     <Choices name="international1" toName="text" choice="multiple" showInLine="true">
       <Choice value="Californians"/>
       <Choice value="Europeans"/>
@@ -397,7 +397,7 @@
   </View>
   <View style="box-shadow: 2px 2px 5px #999; padding: 20px; margin-top: 2em; border-radius: 5px;">
     <Header value="Others"/>
-    <Header size="6" value="Another aspect not covered in the other categories is discussed in the text segment."/>
+    <Header style="font-weight: normal;" size="6" value="Another aspect not covered in the other categories is discussed in the text segment."/>
     <Header size="8" value="Other Type: What other aspect not covered in the other categories is discussed in the text segment?"/>
     <Choices name="others1" toName="text" choice="multiple" showInLine="true">
       <Choice value="Introductory/Generic"/>
